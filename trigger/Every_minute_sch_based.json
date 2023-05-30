@@ -1,0 +1,25 @@
+{
+	"name": "Every_minute_sch_based",
+	"properties": {
+		"description": "this is to check the pipeline execution",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Rest_API_pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2023-05-14T11:44:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

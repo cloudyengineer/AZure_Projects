@@ -1,0 +1,27 @@
+{
+	"name": "REST_API_02_WEB_activity",
+	"properties": {
+		"activities": [
+			{
+				"name": "Web1",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": "https://restcountries.com/v3.1/name/united",
+					"method": "GET"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-05-09T10:32:55Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

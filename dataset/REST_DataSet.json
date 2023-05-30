@@ -1,0 +1,13 @@
+{
+	"name": "REST_DataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "REST_linked_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

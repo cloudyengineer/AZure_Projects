@@ -1,0 +1,27 @@
+{
+	"name": "SQL_generic_LS_LEC_10",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "this is to be used in lec 10",
+		"parameters": {
+			"scehma_name": {
+				"type": "string"
+			},
+			"Table_name": {
+				"type": "string"
+			},
+			"DB_name": {
+				"type": "string"
+			},
+			"DB_endpoint": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=@{linkedService().DB_endpoint};initial catalog=@{linkedService().DB_name};user id=sqlserver01adls",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEFEMUQ4OUYwLTU4MTAtNDM2MC04MTJDLUJBOTcyRTJBQjQyQ18wNWRhM2MyZC1kNTNmLTQ5MGEtOGUzMy1jZDA5OTA2MTU3YWMiDQp9"
+		}
+	}
+}

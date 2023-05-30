@@ -1,0 +1,14 @@
+{
+	"name": "REST_Linked_service_Parametrise",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This is for the parametrise one \nwe can not use the previous one bez of the different URL",
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://restcountries.com/v3.1/name",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "Every_Two_min_Trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "REST_API_02_WEB_activity",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2023-05-14T11:53:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
